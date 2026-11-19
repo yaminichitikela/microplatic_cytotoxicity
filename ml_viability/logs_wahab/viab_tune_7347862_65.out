@@ -1,0 +1,22 @@
+task 65: seed=3 features=B model=svm trials=100 cpus=8
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random split: train=1520 val=190 test=191 rows
+tuning done in 88s; best val RMSE = 12.906
+{
+  "model": "svm",
+  "features": "B",
+  "seed": 3,
+  "n_trials": 100,
+  "n_train": 1520,
+  "n_val": 190,
+  "n_test": 191,
+  "train_R2": 0.8692898294296226,
+  "train_RMSE": 8.573057299367882,
+  "train_MAE": 5.821891583864887,
+  "val_R2": 0.6900132859852679,
+  "val_RMSE": 12.905702688466254,
+  "val_MAE": 8.86848703983101,
+  "test_R2": 0.5477442916957432,
+  "test_RMSE": 16.742900818252572,
+  "test_MAE": 9.466112989933915
+}

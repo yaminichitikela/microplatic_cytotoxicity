@@ -1,0 +1,22 @@
+task 144: seed=7 features=B model=rf trials=100 cpus=8
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random split: train=1520 val=190 test=191 rows
+tuning done in 124s; best val RMSE = 12.719
+{
+  "model": "rf",
+  "features": "B",
+  "seed": 7,
+  "n_trials": 100,
+  "n_train": 1520,
+  "n_val": 190,
+  "n_test": 191,
+  "train_R2": 0.8785839767122249,
+  "train_RMSE": 8.28264830265923,
+  "train_MAE": 5.356627371585614,
+  "val_R2": 0.6994479246747112,
+  "val_RMSE": 12.719223315300216,
+  "val_MAE": 8.893647609586559,
+  "test_R2": 0.6659072253204541,
+  "test_RMSE": 14.134932221910832,
+  "test_MAE": 9.160122036415908
+}

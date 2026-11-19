@@ -1,0 +1,5 @@
+task 267: src/cv_train.py --split random --features B --model svr --seed 0 --fold 3 --n-trials 50  (cpus=8)
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random fold 3/seed 0: train 1521 rows / 71 papers, test 380 rows / 62 papers, papers in both: 62
+inner tuning: 41s, best inner-CV RMSE 14.67
+{"split": "random", "features": "B", "model": "svr", "seed": 0, "fold": 3, "n_trials": 50, "inner_cv_RMSE": 14.672, "train_papers": 71, "test_papers": 62, "shared_papers": 62, "train_R2": 0.831, "train_RMSE": 9.629, "train_MAE": 6.488, "train_CCC": 0.907, "train_n": 1521, "test_R2": 0.628, "test_RMSE": 15.287, "test_MAE": 9.466, "test_CCC": 0.793, "test_n": 380, "ad_threshold": 1.318, "test_frac_in_AD": 0.947, "test_inAD_R2": 0.651, "test_inAD_RMSE": 14.854, "test_inAD_MAE": 9.107, "test_inAD_CCC": 0.807, "test_inAD_n": 360, "test_outAD_R2": -0.052, "test_outAD_RMSE": 21.646, "test_outAD_MAE": 15.926, "test_outAD_CCC": 0.472, "test_outAD_n": 20}

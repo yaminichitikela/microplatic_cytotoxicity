@@ -1,0 +1,86 @@
+{
+  "target": "Cell viability",
+  "feature_set": "C",
+  "numeric_features": [
+    "Concentration(\u03bcg/mL)",
+    "Diameter(nm)",
+    "Exposure time"
+  ],
+  "categorical_features": [
+    "Core",
+    "Shape",
+    "Surface modification",
+    "Plastic source",
+    "Cell source species",
+    "Cell anatomical type",
+    "Cell-tissue-organ-origin",
+    "Cell origin",
+    "Cell line",
+    "Assay type"
+  ],
+  "model": "xgb",
+  "seed": 7,
+  "hyperparameters": {
+    "n_estimators": 2000,
+    "learning_rate": 0.04181069952448489,
+    "max_depth": 12,
+    "min_child_weight": 1.182368928466237,
+    "subsample": 0.8025175633828764,
+    "colsample_bytree": 0.9062648153133896,
+    "gamma": 4.327712785082383,
+    "reg_alpha": 0.030776874259896083,
+    "reg_lambda": 0.019540342782431785
+  },
+  "selection": {
+    "model_type": "highest mean test R2 over repeats",
+    "repeat": "lowest validation RMSE",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "mean_test_R2_by_model": {
+      "xgb": 0.7473,
+      "rf": 0.7322,
+      "svm": 0.6745,
+      "knn": 0.6297
+    }
+  },
+  "metrics_refit": {
+    "train": {
+      "R2": 0.9920427763005836,
+      "RMSE": 2.1203717150750134,
+      "MAE": 1.5091347832287176
+    },
+    "val": {
+      "R2": 0.8357872429950223,
+      "RMSE": 9.401652028889634,
+      "MAE": 6.6384470828861435
+    },
+    "test": {
+      "R2": 0.7994936789946311,
+      "RMSE": 10.950254750268513,
+      "MAE": 6.907278249073328
+    }
+  },
+  "metrics_original_run": {
+    "test_R2": 0.8085908790393094,
+    "test_RMSE": 10.69895850264373,
+    "test_MAE": 6.807169999962903
+  },
+  "versions": {
+    "python": "3.14.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4"
+  },
+  "load_with": "import joblib; model = joblib.load('model.joblib'); model.predict(X)  # X = DataFrame with the feature columns above; use the same library versions"
+}

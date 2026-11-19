@@ -1,0 +1,41 @@
+task 112: classify split=random seed=4 features=C model=rf trials=100 cpus=8
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random split: train=1520 val=190 test=191 rows
+leakage check: {"val_papers": 57, "val_rows_paper_in_train": 1.0, "val_rows_identical_X_in_train": 0.07368421052631578, "test_papers": 53, "test_rows_paper_in_train": 1.0, "test_rows_identical_X_in_train": 0.03664921465968586, "val_test_shared_papers": 43}
+tuning done in 358s; best val AUC = 0.942
+{
+  "task": "classify",
+  "split": "random",
+  "model": "rf",
+  "features": "C",
+  "seed": 4,
+  "n_trials": 100,
+  "n_train": 1520,
+  "n_val": 190,
+  "n_test": 191,
+  "train_AUC": 0.9999868936110722,
+  "train_PR_AUC": 0.9999217055492213,
+  "train_BalAcc": 0.995176848874598,
+  "train_F1": 0.9787234042553191,
+  "train_MCC": 0.974211968897416,
+  "train_toxic_frac": 0.18157894736842106,
+  "val_AUC": 0.9415668202764977,
+  "val_PR_AUC": 0.8139530382101768,
+  "val_BalAcc": 0.8359447004608296,
+  "val_F1": 0.7222222222222222,
+  "val_MCC": 0.6577351990036578,
+  "val_toxic_frac": 0.18421052631578946,
+  "test_AUC": 0.9302867383512544,
+  "test_PR_AUC": 0.7977707289245898,
+  "test_BalAcc": 0.8117383512544802,
+  "test_F1": 0.6944444444444444,
+  "test_MCC": 0.6234767025089606,
+  "test_toxic_frac": 0.18848167539267016,
+  "val_papers": 57,
+  "val_rows_paper_in_train": 1.0,
+  "val_rows_identical_X_in_train": 0.07368421052631578,
+  "test_papers": 53,
+  "test_rows_paper_in_train": 1.0,
+  "test_rows_identical_X_in_train": 0.03664921465968586,
+  "val_test_shared_papers": 43
+}

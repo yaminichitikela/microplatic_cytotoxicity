@@ -1,0 +1,29 @@
+{
+  "split": "random",
+  "features": "B",
+  "model": "consensus",
+  "seed": 2,
+  "fold": 4,
+  "members": [
+    "xgb",
+    "mlp",
+    "rf"
+  ],
+  "test_papers": 62,
+  "test_R2": 0.7279564916827894,
+  "test_RMSE": 13.216792580273063,
+  "test_MAE": 8.431621107455564,
+  "test_CCC": 0.8406038880647209,
+  "test_n": 380,
+  "test_frac_in_AD": 0.9710526315789474,
+  "test_inAD_R2": 0.7403067310882303,
+  "test_inAD_RMSE": 12.933779201670106,
+  "test_inAD_MAE": 8.253961859666575,
+  "test_inAD_CCC": 0.8487792748035983,
+  "test_inAD_n": 369,
+  "test_outAD_R2": -0.013296352519112542,
+  "test_outAD_RMSE": 20.565802427436118,
+  "test_outAD_MAE": 14.391281328740707,
+  "test_outAD_CCC": 0.15487337136100565,
+  "test_outAD_n": 11
+}

@@ -1,0 +1,11 @@
+Model,R²,R² 95% CI (low),R² 95% CI (high),RMSE,MAE,CCC,QSAR verdict
+Consensus (average of top 3),0.795,0.721,0.841,10.77,6.8,0.883,good
+Stacking (top 3),0.792,0.719,0.838,10.85,6.88,0.882,good
+Extra-Trees,0.785,0.711,0.832,11.03,6.87,0.879,good
+XGBoost,0.766,0.681,0.819,11.51,7.54,0.87,good
+Random Forest,0.756,0.663,0.814,11.75,7.4,0.856,good
+MLP (neural network),0.722,0.629,0.783,12.54,7.94,0.846,acceptable
+SVR,0.702,0.618,0.765,12.98,8.25,0.834,acceptable
+kNN,0.685,0.603,0.745,13.34,8.24,0.824,acceptable
+ElasticNet,0.334,0.217,0.424,19.42,14.03,0.508,fails
+PLS,0.327,0.201,0.425,19.5,14.08,0.526,fails

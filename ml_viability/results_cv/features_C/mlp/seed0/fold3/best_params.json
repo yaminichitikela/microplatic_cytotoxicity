@@ -1,0 +1,7 @@
+{
+  "n_layers": 2,
+  "width": 128,
+  "alpha": 0.011570327638954861,
+  "learning_rate_init": 0.0018860494140105156,
+  "batch_size": 32
+}

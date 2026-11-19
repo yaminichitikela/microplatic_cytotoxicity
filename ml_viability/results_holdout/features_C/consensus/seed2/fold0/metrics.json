@@ -1,0 +1,28 @@
+{
+  "scheme": "holdout",
+  "features": "C",
+  "model": "consensus",
+  "seed": 2,
+  "fold": 0,
+  "members": [
+    "xgb",
+    "rf",
+    "et"
+  ],
+  "test_R2": 0.7971085011546514,
+  "test_RMSE": 10.690660722972439,
+  "test_MAE": 7.18968086261929,
+  "test_CCC": 0.878750419862275,
+  "test_n": 381,
+  "test_frac_in_AD": 0.9501312335958005,
+  "test_inAD_R2": 0.8089392353057085,
+  "test_inAD_RMSE": 10.511497082726455,
+  "test_inAD_MAE": 7.131072319872709,
+  "test_inAD_CCC": 0.8860905972779152,
+  "test_inAD_n": 362,
+  "test_outAD_R2": 0.25361480708177453,
+  "test_outAD_RMSE": 13.662525961262897,
+  "test_outAD_MAE": 8.306327834948895,
+  "test_outAD_CCC": 0.5067632865825787,
+  "test_outAD_n": 19
+}

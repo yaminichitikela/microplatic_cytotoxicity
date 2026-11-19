@@ -1,0 +1,7 @@
+task 192: src/cv_train.py --split group --features C --model enet --seed 1 --fold 4 --n-trials 50  (cpus=8)
+/home/ychit001/microplastic/ml_viability/.venv/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.196576e+03, tolerance: 6.203e+01
+  model = cd_fast.enet_coordinate_descent(
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+group fold 4/seed 1: train 1518 rows / 59 papers, test 383 rows / 12 papers, papers in both: 0
+inner tuning: 29s, best inner-CV RMSE 23.40
+{"split": "group", "features": "C", "model": "enet", "seed": 1, "fold": 4, "n_trials": 50, "inner_cv_RMSE": 23.403, "train_papers": 59, "test_papers": 12, "shared_papers": 0, "train_R2": 0.125, "train_RMSE": 22.39, "train_MAE": 16.059, "train_CCC": 0.155, "train_n": 1518, "test_R2": -0.011, "test_RMSE": 23.303, "test_MAE": 18.265, "test_CCC": 0.014, "test_n": 383, "ad_threshold": 3.172, "test_frac_in_AD": 0.958, "test_inAD_R2": -0.01, "test_inAD_RMSE": 22.973, "test_inAD_MAE": 17.942, "test_inAD_CCC": 0.021, "test_inAD_n": 367, "test_outAD_R2": -0.451, "test_outAD_RMSE": 29.888, "test_outAD_MAE": 25.689, "test_outAD_CCC": 0.049, "test_outAD_n": 16}

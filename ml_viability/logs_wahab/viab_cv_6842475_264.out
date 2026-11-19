@@ -1,0 +1,5 @@
+task 264: src/cv_train.py --split random --features B --model enet --seed 0 --fold 3 --n-trials 50  (cpus=8)
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random fold 3/seed 0: train 1521 rows / 71 papers, test 380 rows / 62 papers, papers in both: 62
+inner tuning: 37s, best inner-CV RMSE 20.04
+{"split": "random", "features": "B", "model": "enet", "seed": 0, "fold": 3, "n_trials": 50, "inner_cv_RMSE": 20.04, "train_papers": 71, "test_papers": 62, "shared_papers": 62, "train_R2": 0.319, "train_RMSE": 19.346, "train_MAE": 14.37, "train_CCC": 0.48, "train_n": 1521, "test_R2": 0.212, "test_RMSE": 22.259, "test_MAE": 15.079, "test_CCC": 0.396, "test_n": 380, "ad_threshold": 1.318, "test_frac_in_AD": 0.947, "test_inAD_R2": 0.215, "test_inAD_RMSE": 22.29, "test_inAD_MAE": 14.983, "test_inAD_CCC": 0.395, "test_inAD_n": 360, "test_outAD_R2": -0.057, "test_outAD_RMSE": 21.69, "test_outAD_MAE": 16.811, "test_outAD_CCC": 0.325, "test_outAD_n": 20}

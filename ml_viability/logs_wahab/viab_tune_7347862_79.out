@@ -1,0 +1,22 @@
+task 79: seed=3 features=E4 model=knn trials=100 cpus=8
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random split: train=1520 val=190 test=191 rows
+tuning done in 81s; best val RMSE = 19.537
+{
+  "model": "knn",
+  "features": "E4",
+  "seed": 3,
+  "n_trials": 100,
+  "n_train": 1520,
+  "n_val": 190,
+  "n_test": 191,
+  "train_R2": 0.5766542155577006,
+  "train_RMSE": 15.428675874827082,
+  "train_MAE": 11.149417066729324,
+  "val_R2": 0.2896107653605817,
+  "val_RMSE": 19.537019116697746,
+  "val_MAE": 14.285659150375938,
+  "test_R2": 0.27254325921238365,
+  "test_RMSE": 21.234510900640448,
+  "test_MAE": 13.22184034405385
+}

@@ -1,0 +1,34 @@
+{
+  "split": "random",
+  "features": "B",
+  "model": "stack",
+  "seed": 2,
+  "fold": 0,
+  "members": [
+    "xgb",
+    "rf",
+    "mlp"
+  ],
+  "test_papers": 64,
+  "test_R2": 0.7094283688495501,
+  "test_RMSE": 12.374975134596191,
+  "test_MAE": 8.237687061559786,
+  "test_CCC": 0.82983104128358,
+  "test_n": 381,
+  "test_frac_in_AD": 0.937007874015748,
+  "blender_weights": {
+    "xgb": 0.464,
+    "rf": 0.286,
+    "mlp": 0.256
+  },
+  "test_inAD_R2": 0.7249167320041333,
+  "test_inAD_RMSE": 12.162736477424817,
+  "test_inAD_MAE": 8.087791210012748,
+  "test_inAD_CCC": 0.8376637012270527,
+  "test_inAD_n": 357,
+  "test_outAD_R2": 0.3218050336381344,
+  "test_outAD_RMSE": 15.185743072054676,
+  "test_outAD_MAE": 10.467387853321986,
+  "test_outAD_CCC": 0.616345012339336,
+  "test_outAD_n": 24
+}

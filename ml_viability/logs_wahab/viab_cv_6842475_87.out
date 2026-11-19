@@ -1,0 +1,5 @@
+task 87: src/cv_train.py --split group --features B --model mlp --seed 2 --fold 0 --n-trials 50  (cpus=8)
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+group fold 0/seed 2: train 1506 rows / 62 papers, test 395 rows / 9 papers, papers in both: 0
+inner tuning: 483s, best inner-CV RMSE 23.80
+{"split": "group", "features": "B", "model": "mlp", "seed": 2, "fold": 0, "n_trials": 50, "inner_cv_RMSE": 23.797, "train_papers": 62, "test_papers": 9, "shared_papers": 0, "train_R2": 0.836, "train_RMSE": 9.999, "train_MAE": 6.333, "train_CCC": 0.909, "train_n": 1506, "test_R2": -1.085, "test_RMSE": 28.855, "test_MAE": 21.929, "test_CCC": 0.335, "test_n": 395, "ad_threshold": 2.627, "test_frac_in_AD": 0.995, "test_inAD_R2": -1.089, "test_inAD_RMSE": 28.914, "test_inAD_MAE": 21.975, "test_inAD_CCC": 0.333, "test_inAD_n": 393}

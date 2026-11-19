@@ -1,0 +1,6 @@
+task 48: src/cv_ensemble.py --split random --features C --seed 0 --fold 3  (cpus=8)
+top models by inner-CV RMSE: {'xgb': 12.36, 'et': 12.64, 'rf': 12.66}
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+stack blender weights: {'xgb': 0.476, 'et': 0.288, 'rf': 0.272}
+consensus {"test_papers": 62, "test_R2": 0.729, "test_RMSE": 13.055, "test_MAE": 7.463, "test_CCC": 0.837, "test_frac_in_AD": 0.932, "test_inAD_R2": 0.753, "test_inAD_RMSE": 12.454, "test_inAD_MAE": 7.036, "test_inAD_CCC": 0.855, "test_outAD_R2": 0.07, "test_outAD_RMSE": 19.468, "test_outAD_MAE": 13.28, "test_outAD_CCC": 0.281}
+stack {"test_papers": 62, "test_R2": 0.729, "test_RMSE": 13.061, "test_MAE": 7.522, "test_CCC": 0.842, "test_frac_in_AD": 0.932, "test_inAD_R2": 0.751, "test_inAD_RMSE": 12.517, "test_inAD_MAE": 7.11, "test_inAD_CCC": 0.858, "test_outAD_R2": 0.116, "test_outAD_RMSE": 18.975, "test_outAD_MAE": 13.126, "test_outAD_CCC": 0.321}

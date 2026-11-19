@@ -1,0 +1,77 @@
+{
+  "target": "Cell viability",
+  "feature_set": "C",
+  "numeric_features": [
+    "Concentration(\u03bcg/mL)",
+    "Diameter(nm)",
+    "Exposure time"
+  ],
+  "categorical_features": [
+    "Core",
+    "Shape",
+    "Surface modification",
+    "Plastic source",
+    "Cell source species",
+    "Cell anatomical type",
+    "Cell-tissue-organ-origin",
+    "Cell origin",
+    "Cell line",
+    "Assay type"
+  ],
+  "model": "xgb",
+  "seed": 42,
+  "hyperparameters": {
+    "n_estimators": 350,
+    "learning_rate": 0.027718211413970906,
+    "max_depth": 12,
+    "min_child_weight": 2.520673288529558,
+    "subsample": 0.6816998224317211,
+    "colsample_bytree": 0.9536418845770205,
+    "gamma": 4.841119479144184,
+    "reg_alpha": 0.02643459415597391,
+    "reg_lambda": 2.1871623484257013e-07
+  },
+  "selection": {
+    "model_type": "highest mean test R2 over repeats",
+    "repeat": "lowest validation RMSE",
+    "seeds": [
+      42
+    ],
+    "mean_test_R2_by_model": {
+      "xgb": 0.8561,
+      "rf": 0.8105,
+      "knn": 0.6606,
+      "svm": 0.6509
+    }
+  },
+  "metrics_refit": {
+    "train": {
+      "R2": 0.9485820503911406,
+      "RMSE": 5.407444778348667,
+      "MAE": 3.6400521350677018
+    },
+    "val": {
+      "R2": 0.7828361051626858,
+      "RMSE": 11.476705983346625,
+      "MAE": 7.769425453011763
+    },
+    "test": {
+      "R2": 0.8561174983914625,
+      "RMSE": 8.490689772808654,
+      "MAE": 6.194556332218509
+    }
+  },
+  "metrics_original_run": {
+    "test_R2": 0.8561174983914625,
+    "test_RMSE": 8.490689772808654,
+    "test_MAE": 6.194556332218509
+  },
+  "versions": {
+    "python": "3.14.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4"
+  },
+  "load_with": "import joblib; model = joblib.load('model.joblib'); model.predict(X)  # X = DataFrame with the feature columns above; use the same library versions"
+}

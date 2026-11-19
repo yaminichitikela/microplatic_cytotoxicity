@@ -1,0 +1,13 @@
+task 168: src/cv_train.py --split group --features C --model enet --seed 1 --fold 1 --n-trials 50  (cpus=8)
+/home/ychit001/microplastic/ml_viability/.venv/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.310418e+02, tolerance: 4.314e+01
+  model = cd_fast.enet_coordinate_descent(
+/home/ychit001/microplastic/ml_viability/.venv/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.665113e+02, tolerance: 6.087e+01
+  model = cd_fast.enet_coordinate_descent(
+/home/ychit001/microplastic/ml_viability/.venv/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.246036e+02, tolerance: 4.314e+01
+  model = cd_fast.enet_coordinate_descent(
+/home/ychit001/microplastic/ml_viability/.venv/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.794880e+03, tolerance: 6.087e+01
+  model = cd_fast.enet_coordinate_descent(
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+group fold 1/seed 1: train 1526 rows / 55 papers, test 375 rows / 16 papers, papers in both: 0
+inner tuning: 27s, best inner-CV RMSE 22.48
+{"split": "group", "features": "C", "model": "enet", "seed": 1, "fold": 1, "n_trials": 50, "inner_cv_RMSE": 22.485, "train_papers": 55, "test_papers": 16, "shared_papers": 0, "train_R2": 0.102, "train_RMSE": 21.768, "train_MAE": 15.872, "train_CCC": 0.13, "train_n": 1526, "test_R2": 0.036, "test_RMSE": 26.243, "test_MAE": 18.684, "test_CCC": 0.055, "test_n": 375, "ad_threshold": 3.418, "test_frac_in_AD": 1.0, "test_inAD_R2": 0.036, "test_inAD_RMSE": 26.243, "test_inAD_MAE": 18.684, "test_inAD_CCC": 0.055, "test_inAD_n": 375}

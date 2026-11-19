@@ -1,0 +1,79 @@
+{
+  "target": "Cell viability",
+  "feature_set": "E6",
+  "numeric_features": [
+    "Concentration(\u03bcg/mL)",
+    "Diameter(nm)",
+    "Exposure time"
+  ],
+  "categorical_features": [
+    "Surface modification",
+    "Core",
+    "Cell line"
+  ],
+  "model": "xgb",
+  "seed": 8,
+  "hyperparameters": {
+    "n_estimators": 1100,
+    "learning_rate": 0.013638514690463656,
+    "max_depth": 12,
+    "min_child_weight": 1.4589843705742853,
+    "subsample": 0.8574134739733155,
+    "colsample_bytree": 0.8625060126121631,
+    "gamma": 4.377982446183937,
+    "reg_alpha": 0.3056733062358946,
+    "reg_lambda": 1.5451018386245425e-06
+  },
+  "selection": {
+    "model_type": "highest mean test R2 over repeats",
+    "repeat": "lowest validation RMSE",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "mean_test_R2_by_model": {
+      "xgb": 0.689,
+      "rf": 0.6614,
+      "svm": 0.6359,
+      "knn": 0.5877
+    }
+  },
+  "metrics_refit": {
+    "train": {
+      "R2": 0.963352838752172,
+      "RMSE": 4.590453032253575,
+      "MAE": 2.788784245396209
+    },
+    "val": {
+      "R2": 0.7990795267716431,
+      "RMSE": 10.389846664846527,
+      "MAE": 7.102583183136789
+    },
+    "test": {
+      "R2": 0.7495431895724958,
+      "RMSE": 11.405227739856935,
+      "MAE": 7.816878333920784
+    }
+  },
+  "metrics_original_run": {
+    "test_R2": 0.7464684370290342,
+    "test_RMSE": 11.47502276567887,
+    "test_MAE": 7.83333285568477
+  },
+  "versions": {
+    "python": "3.14.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4"
+  },
+  "load_with": "import joblib; model = joblib.load('model.joblib'); model.predict(X)  # X = DataFrame with the feature columns above; use the same library versions"
+}

@@ -1,0 +1,11 @@
+task 360: src/cv_train.py --split random --features C --model enet --seed 0 --fold 0 --n-trials 50  (cpus=8)
+/home/ychit001/microplastic/ml_viability/.venv/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.168613e+02, tolerance: 5.733e+01
+  model = cd_fast.enet_coordinate_descent(
+/home/ychit001/microplastic/ml_viability/.venv/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.013914e+01, tolerance: 5.733e+01
+  model = cd_fast.enet_coordinate_descent(
+/home/ychit001/microplastic/ml_viability/.venv/lib/python3.14/site-packages/sklearn/linear_model/_coordinate_descent.py:842: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.258626e+02, tolerance: 6.217e+01
+  model = cd_fast.enet_coordinate_descent(
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random fold 0/seed 0: train 1520 rows / 71 papers, test 381 rows / 64 papers, papers in both: 64
+inner tuning: 46s, best inner-CV RMSE 19.81
+{"split": "random", "features": "C", "model": "enet", "seed": 0, "fold": 0, "n_trials": 50, "inner_cv_RMSE": 19.814, "train_papers": 71, "test_papers": 64, "shared_papers": 64, "train_R2": 0.419, "train_RMSE": 18.396, "train_MAE": 13.262, "train_CCC": 0.568, "train_n": 1520, "test_R2": 0.275, "test_RMSE": 19.056, "test_MAE": 14.466, "test_CCC": 0.482, "test_n": 381, "ad_threshold": 1.426, "test_frac_in_AD": 0.927, "test_inAD_R2": 0.291, "test_inAD_RMSE": 19.082, "test_inAD_MAE": 14.383, "test_inAD_CCC": 0.485, "test_inAD_n": 353, "test_outAD_R2": -0.381, "test_outAD_RMSE": 18.728, "test_outAD_MAE": 15.519, "test_outAD_CCC": 0.251, "test_outAD_n": 28}

@@ -1,0 +1,14 @@
+,"SHAP, nested CV",XGBoost gain (built-in),"Permutation, nested CV","SHAP, single split"
+Concentration,1,10,1,1
+Surface modification,2,7,2,2
+Diameter,3,12,3,3
+Cell line,4,1,5,4
+Exposure time,5,13,4,5
+Assay type,6,2,6,6
+Cell source species,7,4,7,7
+Core,8,6,8,10
+Cell-tissue-organ-origin,9,3,10,8
+Cell anatomical type,10,5,9,9
+Cell origin,11,8,12,11
+Plastic source,12,9,11,12
+Shape,13,11,13,13

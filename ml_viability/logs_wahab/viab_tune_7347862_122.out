@@ -1,0 +1,22 @@
+task 122: seed=6 features=C model=xgb trials=100 cpus=8
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random split: train=1520 val=190 test=191 rows
+tuning done in 216s; best val RMSE = 9.490
+{
+  "model": "xgb",
+  "features": "C",
+  "seed": 6,
+  "n_trials": 100,
+  "n_train": 1520,
+  "n_val": 190,
+  "n_test": 191,
+  "train_R2": 0.9830628270930555,
+  "train_RMSE": 3.0939735637532255,
+  "train_MAE": 2.2883810410405836,
+  "val_R2": 0.8441780143853879,
+  "val_RMSE": 9.490351522473816,
+  "val_MAE": 6.550257309504459,
+  "test_R2": 0.8222195972246372,
+  "test_RMSE": 9.95513401718977,
+  "test_MAE": 6.700563433785163
+}

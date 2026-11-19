@@ -1,0 +1,33 @@
+{
+  "scheme": "holdout",
+  "features": "C",
+  "model": "stack",
+  "seed": 4,
+  "fold": 0,
+  "members": [
+    "xgb",
+    "mlp",
+    "et"
+  ],
+  "test_R2": 0.7574716830523174,
+  "test_RMSE": 12.291766460717684,
+  "test_MAE": 8.111763349838522,
+  "test_CCC": 0.8626258196899113,
+  "test_n": 381,
+  "test_frac_in_AD": 0.931758530183727,
+  "blender_weights": {
+    "xgb": 0.481,
+    "mlp": 0.391,
+    "et": 0.149
+  },
+  "test_inAD_R2": 0.7762331308872811,
+  "test_inAD_RMSE": 11.871683356137853,
+  "test_inAD_MAE": 7.800505239463531,
+  "test_inAD_CCC": 0.8745156973549604,
+  "test_inAD_n": 355,
+  "test_outAD_R2": 0.19973021485754217,
+  "test_outAD_RMSE": 17.020077320257144,
+  "test_outAD_MAE": 12.361633703035507,
+  "test_outAD_CCC": 0.47003117776586173,
+  "test_outAD_n": 26
+}

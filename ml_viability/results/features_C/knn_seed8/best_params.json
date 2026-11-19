@@ -1,0 +1,5 @@
+{
+  "n_neighbors": 3,
+  "weights": "distance",
+  "p": 1
+}

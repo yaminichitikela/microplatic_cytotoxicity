@@ -1,0 +1,5 @@
+task 434: src/cv_train.py --split random --features C --model knn --seed 1 --fold 4 --n-trials 50  (cpus=8)
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random fold 4/seed 1: train 1521 rows / 71 papers, test 380 rows / 67 papers, papers in both: 67
+inner tuning: 34s, best inner-CV RMSE 16.80
+{"split": "random", "features": "C", "model": "knn", "seed": 1, "fold": 4, "n_trials": 50, "inner_cv_RMSE": 16.797, "train_papers": 71, "test_papers": 67, "shared_papers": 67, "train_R2": 0.997, "train_RMSE": 1.251, "train_MAE": 0.17, "train_CCC": 0.999, "train_n": 1521, "test_R2": 0.736, "test_RMSE": 11.889, "test_MAE": 7.781, "test_CCC": 0.851, "test_n": 380, "ad_threshold": 1.455, "test_frac_in_AD": 0.95, "test_inAD_R2": 0.74, "test_inAD_RMSE": 11.981, "test_inAD_MAE": 7.797, "test_inAD_CCC": 0.853, "test_inAD_n": 361, "test_outAD_R2": 0.11, "test_outAD_RMSE": 9.97, "test_outAD_MAE": 7.47, "test_outAD_CCC": 0.443, "test_outAD_n": 19}

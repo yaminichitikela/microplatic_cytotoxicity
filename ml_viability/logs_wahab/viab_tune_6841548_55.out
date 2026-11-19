@@ -1,0 +1,41 @@
+task 55: classify split=group seed=4 features=C model=knn trials=100 cpus=8
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+group split: train=1465 val=194 test=242 rows
+leakage check: {"val_papers": 7, "val_rows_paper_in_train": 0.0, "val_rows_identical_X_in_train": 0.0, "test_papers": 7, "test_rows_paper_in_train": 0.0, "test_rows_identical_X_in_train": 0.0, "val_test_shared_papers": 0}
+tuning done in 44s; best val AUC = 0.817
+{
+  "task": "classify",
+  "split": "group",
+  "model": "knn",
+  "features": "C",
+  "seed": 4,
+  "n_trials": 100,
+  "n_train": 1465,
+  "n_val": 194,
+  "n_test": 242,
+  "train_AUC": 0.9999930327183546,
+  "train_PR_AUC": 0.9999269473107478,
+  "train_BalAcc": 0.9957081545064378,
+  "train_F1": 0.9956896551724138,
+  "train_MCC": 0.9948916903104755,
+  "train_toxic_frac": 0.1590443686006826,
+  "val_AUC": 0.8172325840905468,
+  "val_PR_AUC": 0.5126612722690757,
+  "val_BalAcc": 0.7419097720388969,
+  "val_F1": 0.5777777777777777,
+  "val_MCC": 0.4546100271060959,
+  "val_toxic_frac": 0.211340206185567,
+  "test_AUC": 0.8070438518278349,
+  "test_PR_AUC": 0.6938122589804829,
+  "test_BalAcc": 0.7127745805301127,
+  "test_F1": 0.5985401459854015,
+  "test_MCC": 0.4428478421967568,
+  "test_toxic_frac": 0.30165289256198347,
+  "val_papers": 7,
+  "val_rows_paper_in_train": 0.0,
+  "val_rows_identical_X_in_train": 0.0,
+  "test_papers": 7,
+  "test_rows_paper_in_train": 0.0,
+  "test_rows_identical_X_in_train": 0.0,
+  "val_test_shared_papers": 0
+}

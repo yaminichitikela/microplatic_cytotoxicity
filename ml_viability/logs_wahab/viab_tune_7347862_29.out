@@ -1,0 +1,22 @@
+task 29: seed=1 features=E6 model=svm trials=100 cpus=8
+Loaded model_data_with_ref.csv: 1902 rows, 1 duplicate dropped -> 1901 rows, 71 papers
+random split: train=1520 val=190 test=191 rows
+tuning done in 114s; best val RMSE = 14.177
+{
+  "model": "svm",
+  "features": "E6",
+  "seed": 1,
+  "n_trials": 100,
+  "n_train": 1520,
+  "n_val": 190,
+  "n_test": 191,
+  "train_R2": 0.7735108257388015,
+  "train_RMSE": 11.479585470116405,
+  "train_MAE": 6.732757444911378,
+  "val_R2": 0.6165411846938376,
+  "val_RMSE": 14.176579163593072,
+  "val_MAE": 9.842385777864305,
+  "test_R2": 0.7158071529641763,
+  "test_RMSE": 11.656579466689672,
+  "test_MAE": 7.6293546380155135
+}
